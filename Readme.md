@@ -1,3 +1,30 @@
-### ZTop ZT9101 vendor wireless driver
+# About
 
-This driver has been adopted for Linux kernel version 6.12, but it has not been tested yet.
+Forked from https://github.com/yjun123/ZT9101_vendor_linux_driver/
+
+Based on version ZT9101_android_V1.2.1800.20241115
+
+350b:9101 ZTopInc 802.11n NIC wifi linux driver
+
+https://codeberg.org/sallecta/driver_wifi_ztopinc
+
+
+# Build
+
+```
+make
+```
+
+# Install
+
+```
+sudo insmod ./zt9101_ztopmac_usb.ko cfg=./wifi.cfg
+```
+
+# Uninstall
+
+```
+sudo rmmod zt9101_ztopmac_usb.ko
+```
+
+
