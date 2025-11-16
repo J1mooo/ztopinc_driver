@@ -18,13 +18,14 @@ make
 # Install
 
 ```
-sudo insmod ./zt9101_ztopmac_usb.ko cfg=./wifi.cfg
+modprobe cfg80211
+insmod ./zt9101_ztopmac_usb.ko cfg=./wifi.cfg
 ```
 
 # Uninstall
 
 ```
-sudo rmmod zt9101_ztopmac_usb.ko
+rmmod zt9101_ztopmac_usb.ko
 ```
 
 
