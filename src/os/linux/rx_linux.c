@@ -147,7 +147,7 @@ static inline void upload_skb(nic_info_st *nic_info, void *pskbv)
         else
         {
             //LOG_I("[%s, %d]", __func__, __LINE__);
-            ret = netif_rx_ni(pskb);
+            ret = netif_rx(pskb);
         }
 
         if (ret == NET_RX_SUCCESS)
@@ -182,7 +182,7 @@ static inline void upload_skb(nic_info_st *nic_info, void *pskbv)
             else
             {
                 //LOG_I("[%s, %d]", __func__, __LINE__);
-                ret = netif_rx_ni(pskb);
+                ret = netif_rx(pskb);
             }
 
             if (ret == NET_RX_SUCCESS)
@@ -215,7 +215,7 @@ static inline void upload_skb(nic_info_st *nic_info, void *pskbv)
             else
             {
                 //LOG_I("[%s, %d]", __func__, __LINE__);
-                ret = netif_rx_ni(pskb);
+                ret = netif_rx(pskb);
             }
 
             if (ret == NET_RX_SUCCESS)
@@ -257,7 +257,7 @@ static inline void upload_skb(nic_info_st *nic_info, void *pskbv)
             else
             {
                 //LOG_I("[%s, %d]", __func__, __LINE__);
-                ret = netif_rx_ni(pskb);
+                ret = netif_rx(pskb);
             }
             if (ret == NET_RX_SUCCESS)
             {

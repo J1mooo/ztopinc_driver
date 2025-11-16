@@ -384,7 +384,7 @@ static zt_s32 mp_proc_xmit_packet_thread(void *nic_info)
 
 static zt_u32 mp_proc_random32(void)
 {
-#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6,5,0))
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6,1,0))
     return get_random_u32();
 #elif (LINUX_VERSION_CODE >= KERNEL_VERSION(3,8,0))
     return prandom_u32();
